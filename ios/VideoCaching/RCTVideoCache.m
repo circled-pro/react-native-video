@@ -24,7 +24,7 @@
     SPTPersistentCacheOptions *options = [SPTPersistentCacheOptions new];
     options.cachePath = self.cachePath;
     options.cacheIdentifier = self.cacheIdentifier;
-    options.defaultExpirationPeriod = 60 * 60 * 24 * 30;
+    options.defaultExpirationPeriod = 10; //60 * 60 * 24 * 30;
     options.garbageCollectionInterval = (NSUInteger)(1.5 * SPTPersistentCacheDefaultGCIntervalSec);
     options.sizeConstraintBytes = 1024 * 1024 * 100;
     options.useDirectorySeparation = NO;
